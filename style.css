@@ -1,5 +1,3 @@
-/*Police*/
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Raleway:wght@100&display=swap');
-*{
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
+header {
+  list-style-type: none;
 }
