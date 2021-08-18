@@ -1,3 +1,7 @@
 header {
   list-style-type: none;
 }
+
+* {
+  font-family: "Raleway", sans-serif;
+}
