@@ -5,3 +5,35 @@ header {
 * {
   font-family: "Raleway", sans-serif;
 }
+
+header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  flex: 1;
+  padding-left: 30px;
+  margin-top: 18px;
+  background-color: blue;
+  margin-bottom: auto;
+}
+
+/* CONTENEUR NAV */
+.navcontent {
+  width: 450px;
+  height: 7px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 0%;
+  background-color: blueviolet;
+}
+
+/* SURVOL DE NAV */
+.survol:hover {
+  color: #0065fc;
+  border-top: 2px solid;
+  padding: 29px;
+}
