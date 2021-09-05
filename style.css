@@ -16,10 +16,7 @@ header {
   width: 1390px;
   max-width: 100%;
   margin-top: 0px;
-}
-
-#logo {
-  padding-left: 30px;
+  padding: 0px 30px;
 }
 
 .navcontent {
@@ -56,24 +53,21 @@ a {
 }
 
 /* TITRE_BAR_FILTRES */
+section {
+  padding: 0px 30px;
+}
 
 h1 {
   font-size: 1.5em;
   font-weight: 700;
   font-weight: bold;
   margin: 0;
-  padding: 0 30px;
 }
 
 h1 + p {
   font-size: 1em;
   font-weight: 500;
   margin: 8px 0 20px 0;
-  padding: 0 30px;
-}
-
-form {
-  padding: 30px;
 }
 
 label {
@@ -82,7 +76,6 @@ label {
   background-color: #f2f2f2;
   border-radius: 20px 0 0 20px;
   position: relative;
-  left: 4px;
   top: 1px;
 }
 
@@ -119,9 +112,8 @@ label {
 
 .filtres {
   display: flex;
-  margin: 35px 0 40px 15px;
+  margin: 35px 0 40px 0px;
   flex-wrap: wrap;
-  padding: 0 30px;
 }
 
 .container_filtres {
@@ -213,12 +205,17 @@ label {
   font-size: 1.1em;
 }
 
-.p_i_info {
+.fa-chart-line:before {
+  color: black;
+}
+
+.i_info {
   display: flex;
   align-items: center;
   font-size: 1em;
   font-weight: 500;
-  padding: 0 30px;
+  margin-top: -25px;
+  margin-bottom: 30px;
 }
 
 .logo_info {
@@ -255,7 +252,7 @@ label {
   background-color: #f2f2f2;
   border-radius: 20px;
   height: 660px;
-  padding: 0 20px 0 20px;
+  padding: 0px 25px 0 25px;
   display: grid;
 }
 
@@ -273,7 +270,10 @@ label {
   align-content: space-around;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 25px;
+  column-gap: 30px;
+  margin-top: -90px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hebergements_articles {
@@ -342,6 +342,7 @@ label {
   position: relative;
   left: 16px;
   top: 18px;
+  padding-top: 15px;
 }
 
 .populaires {
