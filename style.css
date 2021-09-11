@@ -24,6 +24,12 @@ header {
   display: flex;
 }
 
+/* TOP BAR RESPONSIVE SMARTPHONE */
+
+.navcontent2 {
+  display: flex;
+}
+
 nav ul {
   display: flex;
   list-style-type: none;
@@ -201,9 +207,17 @@ label {
   margin-top: 25px;
 }
 
-/* HEBERGEMENTS */
+/* HEBERGEMENTS A MARSEILLE */
 
 .hebergements {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.hebergements_background {
   display: flex;
   width: 810px;
   background-color: #f2f2f2;
@@ -213,14 +227,6 @@ label {
   display: grid;
 }
 
-.hebergements_populaires {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0 30px;
-}
-
 .titre_hebergements {
   margin: 40px 20px 20px 20px;
   font-size: 1.5em;
@@ -228,10 +234,7 @@ label {
   font-weight: bold;
 }
 
-.hebergements_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.carte_container_Marseille {
   align-content: space-around;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -240,8 +243,6 @@ label {
   padding-left: 20px;
   padding-right: 20px;
 }
-
-/* FOND ET IMAGE */
 
 .hebergements_articles {
   padding: 5px 5px 10px 5px;
@@ -269,14 +270,14 @@ label {
   border-radius: 16px 16px 0 0;
 }
 
-.hebergements_fc {
+.figcaption_hebergements {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-left: 10px;
 }
 
-.hebergements_fc h3 {
+.figcaption_hebergements h3 {
   font-size: 1em;
   font-weight: bold;
   color: black;
@@ -284,7 +285,7 @@ label {
   margin-top: 6px;
 }
 
-.hebergements_fc p {
+.figcaption_hebergements p {
   font-size: 0.9em;
   font-weight: 500;
   color: black;
@@ -317,10 +318,12 @@ label {
   font-weight: bold;
 }
 
+/* LES PLUS POPULAIRES */
+
 .populaires {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   background-color: #f2f2f2;
   border-radius: 20px;
   width: 30%;
@@ -422,7 +425,7 @@ label {
   color: black;
 }
 
-/*activites*/
+/* ACTIVITÉS A MARSEILLE */
 
 .activites {
   display: flex;
