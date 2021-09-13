@@ -161,6 +161,7 @@ label {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .filtreicon {
   border-radius: 25px;
   width: 52px;
@@ -207,407 +208,479 @@ label {
   margin-top: 25px;
 }
 
-/* HEBERGEMENTS A MARSEILLE */
+/* HEBERGEMENTS */
 
 .hebergements {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0 30px;
 }
 
-.hebergements_background {
-  display: flex;
-  width: 810px;
-  background-color: #f2f2f2;
-  border-radius: 20px;
-  height: 660px;
-  padding: 0px 25px 0 25px;
-  display: grid;
-}
-
-.titre_hebergements {
-  margin: 40px 20px 20px 20px;
-  font-size: 1.5em;
-  font-weight: 700;
+.prix_gras {
   font-weight: bold;
 }
 
-.carte_container_Marseille {
-  align-content: space-around;
+/* HEBERGEMENTS A MARSEILLE */
+
+.marg_titre_galery_afPlus {
+  padding: 20px 45px 70px 45px;
+}
+
+.hebergement_marseille_container {
+  background-color: #f2f2f2;
+  height: 630px;
+  width: 230%;
+  border-radius: 22px;
+  margin-right: -10px;
+}
+
+.galery_carte_marseille {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
-  margin-top: -90px;
-  padding-left: 20px;
-  padding-right: 20px;
+  column-gap: 28px;
+  row-gap: 28px;
+  margin-top: 30px;
 }
 
-.hebergements_articles {
-  padding: 5px 5px 10px 5px;
+.background_carte {
   background-color: white;
+  height: 206px;
+  min-width: 200px;
   border-radius: 20px;
   box-shadow: 0px 0px 15px #d9d9d9;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
 }
 
-.hebergements_articles:hover {
+.background_carte a {
+  color: black;
+}
+
+.background_carte:hover {
   transform: scale(1.02);
   transition-duration: 0.2s;
 }
 
-.hebergements_figures {
-  margin: 0;
+figure {
+  margin: 0px;
 }
 
-.hebergements_img {
-  width: 300px;
-  max-width: 100%;
-  max-height: 100%;
-  min-width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 16px 16px 0 0;
-}
-
-.figcaption_hebergements {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+figcaption {
+  margin-top: -5px;
   margin-left: 10px;
-}
-
-.figcaption_hebergements h3 {
-  font-size: 1em;
-  font-weight: bold;
-  color: black;
-  margin: 0;
-  margin-top: 6px;
-}
-
-.figcaption_hebergements p {
-  font-size: 0.9em;
-  font-weight: 500;
-  color: black;
-  margin: 0;
-  margin-top: 2px;
+  line-height: 7px;
 }
 
 .stars {
-  display: flex;
+  margin-top: -3px;
+}
+.star_blue {
   color: #0065fc;
-  margin-top: 6px;
-  font-size: 0.9em;
 }
 
-.stars .vide {
-  color: #d9d9d9;
+.star_vide {
+  color: #f2f2f2;
 }
 
-.afficher_plus {
+.div_Afficher_plus {
+  margin-top: 7px;
   font-weight: bold;
-  font-size: 1.1em;
-  position: relative;
-  left: 16px;
-  top: 18px;
-  padding-top: 15px;
-}
-
-.afficher_plus a {
   color: black;
-  font-weight: bold;
+}
+
+.div_Afficher_plus a {
+  color: black;
+}
+
+.divimg_auberge_cannebiere {
+  background-image: url(img/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.divimg_hotel_du_port {
+  background-image: url(img/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.divimg_hotel_les_mouettes {
+  background-image: url(img/hebergements/2_large//reisetopia-B8WIgxA_PFU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.divimg_hotel_dela_mer {
+  background-image: url(img/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.divimg_auberge_le_panier {
+  background-image: url(img/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.divimg_hotel_chez_amina {
+  background-image: url(img/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* LES PLUS POPULAIRES */
 
-.populaires {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+.les_plus_populaires_contenair {
   background-color: #f2f2f2;
-  border-radius: 20px;
-  width: 30%;
-  height: 660px;
+  height: 570px;
+  width: 100%;
+  margin-left: 50px;
+  padding: 30px;
+  border-radius: 22px;
+  min-width: 350px;
 }
 
-.titre_populaires {
+.marg_titre_galery_populaire {
+  padding-left: 5px;
+  padding-right: 10px;
+  margin-top: -10px;
+}
+
+.titre_chart_populaires {
   display: flex;
   justify-content: space-between;
-  font-size: 1.5em;
-  font-weight: 700;
-  font-weight: bold;
-  margin: 40px 36px 20px 36px;
-}
-
-.populaires_container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
-  max-width: 100%;
-  height: 535px;
 }
 
-.populaires_articles {
-  width: 80%;
-  height: 136px;
+.titre_chart_populaires i {
+  font-size: 130%;
+  color: black;
+}
+
+.galery_carte_populaires {
+  display: grid;
+  row-gap: 27px;
+  margin-top: 10px;
+}
+
+.background_carte_populaire {
   background-color: white;
-  padding: 5px;
+  height: 150px;
+  min-width: 200px;
   border-radius: 20px;
   box-shadow: 0px 0px 15px #d9d9d9;
-  overflow: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
 }
 
-.populaires_articles:hover {
-  transform: scale(1.02);
-  transition-duration: 0.2s;
-}
-
-.populaires_articles a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-
-.populaires_div_img {
-  position: relative;
-  width: 37%;
-  height: 100%;
-}
-
-.populaires_img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 16px 0 0 16px;
-}
-
-.populaires_div_txt {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  height: 100%;
-  margin-left: 20px;
-}
-
-.populaires_div_txt h3 {
-  color: black;
-  font-size: 1em;
-  font-weight: bold;
-  margin: 0;
-  margin-top: 10px;
-  width: 90%;
-}
-
-.populaires_div_txt p {
-  font-size: 0.9em;
-  font-weight: 500;
-  color: black;
-  margin: 0;
-  margin-top: 7px;
-}
-
-.stars_2 {
-  display: flex;
-  height: 100%;
-  align-items: flex-end;
-  margin-bottom: 8px;
-  color: #0065fc;
-  font-size: 0.9em;
-}
-
-.stars_2 .vide {
-  color: #d9d9d9;
-}
-
-.fa-chart-line:before {
+.background_carte_populaire a {
   color: black;
 }
 
-/* ACTIVITÉS A MARSEILLE */
-
-.activites {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  height: 520px;
-}
-
-.activites h2 {
-  font-size: 1.5em;
-  font-weight: 700;
-  font-weight: bold;
-  padding-bottom: 7px;
-}
-
-.activites_container {
+.figure_populaires {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 100%;
-  max-height: 100%;
 }
 
-.hover:hover {
+.fc_populaires {
+  margin-top: 5px;
+  padding-left: 8px;
+}
+
+.stars_populaires {
+  padding-top: 30px;
+}
+
+.divimg_hotel_le_soleilduMatin {
+  background-image: url(img/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 140px;
+  width: 40%;
+  border-radius: 15px 0px 0px 15px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.divimg_Au_coeur_deLeau {
+  background-image: url(img/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 140px;
+  width: 40%;
+  border-radius: 15px 0px 0px 15px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.divimg_hotel_tout_bleuEtblanc {
+  background-image: url(img/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 140px;
+  width: 40%;
+  border-radius: 15px 0px 0px 15px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.background_carte_populaire:hover {
   transform: scale(1.02);
   transition-duration: 0.2s;
 }
 
-.vieux_port_container {
-  width: 22%;
-  height: 450px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 0 15px #d9d9d9;
-}
-
-.vieux_port_figure {
-  margin: 0;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.vieux_port_img {
-  width: 100%;
-  height: 390px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-.fort_de_pomegues_container {
-  width: 100%;
-  height: 240px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 0 15px #d9d9d9;
-}
-
-.fort_de_pomegues_figure {
-  margin: 0;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.fort_de_pomegues_img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-.iles_du_frioul_container {
-  width: 100%;
-  height: 170px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 0 15px #d9d9d9;
-}
-
-.iles_du_frioul_figure {
-  margin: 0;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.iles_du_frioul_img {
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-.container_colonne_2 {
+.flex_txt_populaire {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 22%;
 }
 
-.parc_national_des_calanques_container {
-  width: 22%;
+/* ACTIVITÉ A MARSEILLE */
+
+.activite_contenair {
+  height: 550px;
+  width: 100%;
+  margin-right: 5px;
+  margin-top: 50px;
+}
+
+.galery_activite {
   height: 450px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "vp fp pn nd"
+    "vp if pn pl";
+  column-gap: 52px;
+  row-gap: 39px;
+}
+
+.vieux_Port {
+  grid-area: vp;
   background-color: white;
   border-radius: 20px;
+  height: 450px;
   box-shadow: 0 0 15px #d9d9d9;
 }
 
-.parc_national_des_calanques_figure {
-  margin: 0;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.parc_national_des_calanques_img {
-  width: 100%;
-  height: 390px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-.notre_dame_de_la_garde_container {
-  width: 100%;
-  height: 200px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 0 15px #d9d9d9;
-}
-
-.notre_dame_de_la_garde_figure {
-  margin: 0;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.notre_dame_de_la_garde_img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-.parc_longchamp_container {
-  width: 100%;
-  height: 215px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 0 15px #d9d9d9;
-}
-
-.parc_longchamp_figure {
-  margin: 0;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.parc_longchamp_img {
-  width: 100%;
-  height: 155px;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-.container_colonne_4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 22%;
-}
-
-.activites h3 {
-  color: black;
-  font-size: 1em;
+.vieux_Port figcaption {
+  padding-top: 25px;
+  padding-left: 5px;
   font-weight: bold;
-  margin: 15px 0 16px 18px;
+}
+
+.vieux_Port:hover {
+  transform: scale(1.02);
+  transition-duration: 0.2s;
+}
+
+.FortDe_pomegues {
+  grid-area: fp;
+  background-color: white;
+  border-radius: 20px;
+  height: 238px;
+  box-shadow: 0 0 15px #d9d9d9;
+}
+
+.FortDe_pomegues figcaption {
+  padding-top: 25px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.FortDe_pomegues:hover {
+  transform: scale(1.02);
+  transition-duration: 0.2s;
+}
+
+.iles_du_frioul {
+  grid-area: if;
+  background-color: white;
+  border-radius: 20px;
+  height: 172px;
+  box-shadow: 0 0 15px #d9d9d9;
+}
+
+.iles_du_frioul figcaption {
+  padding-top: 25px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.iles_du_frioul:hover {
+  transform: scale(1.02);
+  transition-duration: 0.2s;
+}
+
+.parcNational {
+  grid-area: pn;
+  background-color: white;
+  border-radius: 20px;
+  height: 450px;
+  padding-top: 0px;
+  box-shadow: 0 0 15px #d9d9d9;
+}
+
+.parcNational figcaption {
+  padding-top: 25px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.parcNational:hover {
+  transform: scale(1.02);
+  transition-duration: 0.2s;
+}
+
+.Notre_dame {
+  grid-area: nd;
+  background-color: white;
+  border-radius: 20px;
+  height: 200px;
+  box-shadow: 0 0 15px #d9d9d9;
+}
+
+.Notre_dame figcaption {
+  padding-top: 25px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.Notre_dame:hover {
+  transform: scale(1.02);
+  transition-duration: 0.2s;
+}
+
+.parc_Longchamp {
+  grid-area: pl;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: -36px;
+  box-shadow: 0 0 15px #d9d9d9;
+}
+
+.parc_Longchamp figcaption {
+  padding-top: 25px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.parc_Longchamp:hover {
+  transform: scale(1.02);
+  transition-duration: 0.2s;
+}
+
+.galery_activite figcaption {
+  margin-top: -16px;
+}
+
+.divimg_vieux_Port {
+  background-image: url(img/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 390px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.divimg_fdp {
+  background-image: url(img/activites/2_large//paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 179px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.divimg_idf {
+  background-image: url(img/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 113px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.div_img_pn {
+  background-image: url(img/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 390px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.div_img_nd {
+  background-image: url(img/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 141px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.div_img_pl {
+  background-image: url(img/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.galery_activite a {
+  color: black;
 }
 
 /* FOOTER */
 
 .footer {
   min-height: 100%;
-  margin-top: 50px;
+  margin-top: 0px;
   background-color: #f2f2f2;
+}
+
+.fc_gras {
+  font-weight: bold;
 }
 
 footer a {
@@ -618,7 +691,7 @@ footer a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1390px;
+  width: 100%;
   max-width: 100%;
   padding: 0 30px 20px 30px;
   margin: auto;
