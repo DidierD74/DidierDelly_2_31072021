@@ -19,13 +19,11 @@
       <div class="logo_reservia">
         <a href="#"><img src="img/logo/Reservia.svg" alt="logo" /></a>
       </div>
-      <div class="navcontent">
+      <div class="navcontent navcontent2">
         <nav>
           <ul>
-            <div class="navcontent2">
-              <li><a href="#">Hébergements</a></li>
-              <li><a href="#">Activités</a></li>
-            </div>
+              <li><a href="#" class="hover_responsiv">Hébergements</a></li>
+              <li><a href="#" class="hover_responsiv">Activités</a></li>
           </ul>
         </nav>
         <p><a href="#" class="survol">S'inscrire</a></p>
@@ -37,20 +35,24 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <form method="post" action="back_end">
-          <label for="recherche"><i class="fas fa-map-marker-alt"></i></label>
+          <i class="fas fa-map-marker-alt logo_map"></i>
           <input
             class="bar_de_recherche"
             type="search"
             name="recherche"
             id="recherche"
             placeholder="Marseille, France"
-            size="5"
-          />
+            size="5"/>
           <input class="bouton" type="button" value="Rechercher" />
+          <button><i class="fas fa-search logo fa-lg"></i></button>
         </form>
         <!-- FILTRES -->
         <div class="filtre margfiltre">
+          <div class="div_h3_et_filtres">
+          <div class="div_filtre_h3">
           <div class="margfiltreh3"><h3>Filtres</h3></div>
+        </div>
+        <div class="div_filtre_filtres">
           <div class="filtre_texticon">
             <i class="fas fa-money-bill-wave filtreicon"></i>
             <div class="marg_filtre_txt">Économique</div>
@@ -67,6 +69,8 @@
             <i class="fas fa-dog filtreicon"></i>
             <div class="marg_filtre_txt filtre_animaux">Animaux autorisés</div>
           </div>
+        </div>
+      </div>
         </div>
         <p class="i_info marg_info">
           <span class="logo_info"><i class="fas fa-info"></i></span> Plus de 500
@@ -286,7 +290,7 @@
           <div class="vieux_Port">
             <a href="#">
           <figure class="figure_vp">
-            <div class="divimg_vieux_Port"></div>
+            <div class="divimg_vieux_Port div_resp"></div>
             <figcaption class="fc_vp">
             <p>Vieux port</p>
           </figcaption>
@@ -297,7 +301,7 @@
           <div class="FortDe_pomegues">
             <a href="#">
             <figure class="figure_fdp">
-              <div class="divimg_fdp"></div>
+              <div class="divimg_fdp div_resp"></div>
               <figcaption>
                 <p>Fort de pomègues</p>
               </figcaption>
@@ -308,7 +312,7 @@
           <div class="iles_du_frioul">
             <a href="#">
             <figure class="figure_idf">
-              <div class="divimg_idf"></div>
+              <div class="divimg_idf div_resp"></div>
               <figcaption>
                <p> Îles du Frioul</p>
               </figcaption>
@@ -319,7 +323,7 @@
           <div class="parcNational">
             <a href="#">
             <figure class="figure_pn">
-              <div class="div_img_pn"></div>
+              <div class="div_img_pn div_resp"></div>
               <figcaption>
                 <p>Parc National des Calanques</p>
               </figcaption>
@@ -330,7 +334,7 @@
           <div class="Notre_dame">
             <a href="#">
             <figure class="figure_nd">
-              <div class="div_img_nd"></div>
+              <div class="div_img_nd div_resp"></div>
               <figcaption>
                 <p>Notre-Dames-de-la-Garde</p>
               </figcaption>
@@ -341,7 +345,7 @@
           <div class="parc_Longchamp">
             <a href="#">
             <figure class="figure_pl">
-              <div class="div_img_pl"></div>
+              <div class="div_img_pl div_resp"></div>
               <figcaption>
                 <p>Parc Longchamp</p>
               </figcaption>

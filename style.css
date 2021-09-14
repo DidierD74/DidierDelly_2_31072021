@@ -24,12 +24,6 @@ header {
   display: flex;
 }
 
-/* TOP BAR RESPONSIVE SMARTPHONE */
-
-.navcontent2 {
-  display: flex;
-}
-
 nav ul {
   display: flex;
   list-style-type: none;
@@ -78,13 +72,16 @@ h1 + p {
 
 /* INPUT*/
 
-label {
-  font-size: 1.1em;
+form {
+  display: flex;
+  align-items: center;
+}
+
+.logo_map {
+  font-size: 19px;
   padding: 17px 18px;
   background-color: #f2f2f2;
   border-radius: 20px 0 0 20px;
-  position: relative;
-  top: 1px;
 }
 
 #recherche::placeholder {
@@ -96,7 +93,8 @@ label {
   font-size: 1.05em;
   font-weight: bold;
   width: 235px;
-  padding: 16px 0px 16px 10px;
+  height: auto;
+  padding: 16px 0px 16px 0px;
   border: none;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
@@ -119,12 +117,22 @@ label {
   cursor: pointer;
 }
 
+input {
+  margin-left: -5px;
+}
+
 /* FILTRES */
 
-.filtre {
+.div_h3_et_filtres {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+}
+
+.div_filtre_filtres {
+  display: flex;
+}
+
+..filtre_div_flex2 {
+  display: flex;
 }
 
 .margfiltre {
@@ -227,9 +235,9 @@ label {
 .hebergement_marseille_container {
   background-color: #f2f2f2;
   height: 630px;
-  width: 230%;
+  width: 65%;
   border-radius: 22px;
-  margin-right: -10px;
+  margin-right: 0px;
 }
 
 .galery_carte_marseille {
@@ -243,7 +251,7 @@ label {
 .background_carte {
   background-color: white;
   height: 206px;
-  min-width: 200px;
+  min-width: 185px;
   border-radius: 20px;
   box-shadow: 0px 0px 15px #d9d9d9;
   padding-left: 5px;
@@ -367,11 +375,10 @@ figcaption {
 .les_plus_populaires_contenair {
   background-color: #f2f2f2;
   height: 570px;
-  width: 100%;
+  width: 27%;
   margin-left: 50px;
   padding: 30px;
   border-radius: 22px;
-  min-width: 350px;
 }
 
 .marg_titre_galery_populaire {
@@ -400,11 +407,11 @@ figcaption {
 .background_carte_populaire {
   background-color: white;
   height: 150px;
-  min-width: 200px;
   border-radius: 20px;
   box-shadow: 0px 0px 15px #d9d9d9;
   padding-left: 5px;
   padding-right: 5px;
+  min-width: 272px;
   cursor: pointer;
 }
 
@@ -674,7 +681,6 @@ figcaption {
 /* FOOTER */
 
 .footer {
-  min-height: 100%;
   margin-top: 0px;
   background-color: #f2f2f2;
 }
@@ -736,4 +742,210 @@ footer ul {
 
 footer li {
   padding-bottom: 20px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1221px) {
+  .galery_carte_marseille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hebergement_marseille_container {
+    background-color: #f2f2f2;
+    height: auto;
+  }
+
+  .les_plus_populaires_contenair {
+    width: 359px;
+    height: 893px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .hebergements {
+    flex-direction: column-reverse;
+  }
+
+  .les_plus_populaires_contenair {
+    width: auto;
+    height: auto;
+    margin: 0;
+    min-width: 447px;
+  }
+
+  .div_h3_et_filtres {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .div_filtre_filtres {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 465px;
+  }
+
+  .hebergement_marseille_container {
+    margin-top: 50px;
+    height: 860px;
+    width: 100%;
+    min-width: 506px;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .hebergements {
+    flex-direction: column-reverse;
+  }
+
+  .les_plus_populaires_contenair {
+    width: auto;
+    height: auto;
+    margin: 0;
+    border-radius: 0px;
+  }
+
+  .div_h3_et_filtres {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .div_filtre_filtres {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hebergement_marseille_container {
+    margin-top: 50px;
+    height: auto;
+    width: auto;
+    border-radius: 0px;
+  }
+
+  .galery_carte_marseille {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .bouton {
+    display: none;
+  }
+  .logo_recherche {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    color: white;
+  }
+
+  .background_btn2_recherch {
+    position: relative;
+    background-color: #0065fc;
+    height: 53px;
+    border: none;
+  }
+  button {
+    border: none;
+    border-radius: 15px;
+    height: 55px;
+    width: 55px;
+    margin-left: -11px;
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 510px) {
+  button {
+    display: none;
+  }
+  .background_btn2_recherch {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .navcontent {
+    display: none;
+  }
+
+  .topbar {
+    display: block;
+  }
+
+  .navcontent2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    min-width: 600px;
+  }
+
+  .logo_reservia {
+    margin-top: 35px;
+  }
+
+  .survol {
+    float: right;
+    margin-top: -108px;
+    margin-right: 70px;
+  }
+
+  nav a:hover {
+    border-top: solid 2px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+/* FOOTER RESPONSIVE */
+@media screen and (max-width: 600px) {
+  footer a {
+    color: black;
+  }
+
+  .container_colonnes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 30px 20px 30px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .colonnes_footer {
+    flex-direction: column;
+  }
+}
+
+/* ACTIVITÉ RESPONSIVE */
+
+@media screen and (max-width: 1124px) {
+  .activite_contenair {
+    width: 100%;
+    margin-right: 5px;
+    margin-top: 50px;
+  }
+
+  .galery_activite {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div_resp {
+    height: 300px;
+    gap: 20px;
+  }
 }
