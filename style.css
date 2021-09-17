@@ -976,6 +976,7 @@ footer li {
 }
 
 /* FOOTER RESPONSIVE */
+
 @media screen and (max-width: 600px) {
   footer a {
     color: black;
