@@ -24,8 +24,10 @@
       <div class="navcontent">
         <nav>
           <ul>
-            <li class="nav_bottom"><a href="#">Hébergements</a></li>
-            <li class="nav_bottom"><a href="#">Activités</a></li>
+            <li class="nav_bottom">
+              <a href="#ancre_hebergement">Hébergements</a>
+            </li>
+            <li class="nav_bottom"><a href="#ancre_activités">Activités</a></li>
           </ul>
         </nav>
         <p><a href="#" class="survol">S'inscrire</a></p>
@@ -45,7 +47,13 @@
             id="recherche"
             placeholder="Marseille, France"
           />
-          <input class="bouton" type="button" value="Rechercher" />
+
+          <input
+            class="bouton"
+            type="button"
+            value="Rechercher"
+            id="recherche"
+          />
           <button><i class="fas fa-search logo fa-lg"></i></button>
         </form>
         <!-- FILTRES -->
@@ -90,7 +98,7 @@
         <div class="hebergement_marseille_container">
           <div class="marg_titre_galery_afPlus">
             <div class="titre_h2_marseille">
-              <h2>Hébergement à Marseille</h2>
+              <h2 id="ancre_hebergement">Hébergement à Marseille</h2>
             </div>
             <div class="galery_carte_marseille">
               <div class="background_carte">
@@ -300,7 +308,7 @@
       </section>
       <!-- ACTIVITÉS A MARSEILLE -->
       <section class="activites" id="activites">
-        <h2>Activités à Marseille</h2>
+        <h2 id="ancre_activités">Activités à Marseille</h2>
 
         <div class="activites_container">
           <div class="vieux_port_container hover">
