@@ -86,12 +86,17 @@ form {
 
 #recherche::placeholder {
   font-weight: bold;
-  color: black;*
-  margin-left: 5px
-;
+  color: black;
+  margin-left: 5px;
 }
 
-input{
+.recherche2::placeholder {
+  font-weight: bold;
+  color: black;
+  margin-left: 5px;
+}
+
+input {
   text-indent: 10px;
 }
 
@@ -134,13 +139,10 @@ input {
 
 .div_h3_et_filtres {
   display: flex;
+  margin-top: 30px;
 }
 
 .div_filtre_filtres {
-  display: flex;
-}
-
-..filtre_div_flex2 {
   display: flex;
 }
 
@@ -246,7 +248,7 @@ input {
   height: 630px;
   width: 65%;
   border-radius: 22px;
-  margin-right: 0px;
+  margin-right: -5px;
 }
 
 .galery_carte_marseille {
@@ -581,7 +583,7 @@ figcaption {
   border-radius: 20px 20px 0 0;
 }
 
-.container_colonne_2 {
+.container_fp_et_idf {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -655,7 +657,7 @@ figcaption {
   border-radius: 20px 20px 0 0;
 }
 
-.container_colonne_4 {
+.container_nd_pl {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -735,91 +737,51 @@ footer li {
   padding-bottom: 20px;
 }
 
-/* HEBERGEMENTS RESPONSIVE */
+/* HEADER REPONSIVE */
 
-@media screen and (max-width: 1221px) {
-  .galery_carte_marseille {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hebergement_marseille_container {
-    background-color: #f2f2f2;
-    height: auto;
-  }
-
-  .les_plus_populaires_contenair {
-    width: 359px;
-    height: 893px;
-  }
-}
-
-@media screen and (max-width: 1010px) {
-  .hebergements {
-    flex-direction: column-reverse;
-  }
-
-  .les_plus_populaires_contenair {
-    width: auto;
-    height: auto;
-
-    margin: 0px;
-  }
-
-  .div_h3_et_filtres {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .div_filtre_filtres {
+@media screen and (max-width: 650px) {
+  header {
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 150px;
+    padding-top: 35px;
+    padding-left: 0px;
     min-width: 375px;
-    column-gap: -10px;
-    row-gap: 12px;
   }
 
-  .hebergement_marseille_container {
-    margin-top: 50px;
-    height: 860px;
-    width: 100%;
-    min-width: 375px;
-    background-color: white;
-  }
-}
-
-@media screen and (max-width: 585px) {
-  .hebergements {
+  .navcontent {
+    display: flex;
     flex-direction: column-reverse;
-  }
-
-  .les_plus_populaires_contenair {
-    width: auto;
-    height: auto;
-    border-radius: 0px;
-  }
-
-  .hebergement_marseille_container {
-    margin-top: 50px;
-    height: auto;
-    width: auto;
-    border-radius: 0px;
-  }
-
-  .galery_carte_marseille {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media screen and (max-width: 493px) {
-  .les_plus_populaires_contenair {
-    margin-left: -30px;
+    align-items: flex-end;
     width: 100%;
   }
-  .hebergement_marseille_container {
-    margin-left: -30px;
-    width: 115%;
+
+  nav ul {
+    padding-left: 0px;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav li {
+    text-align: center;
+    border-bottom: solid 3px #f2f2f2;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .nav_bottom:hover {
+    border-bottom: solid 3px #0065fc;
+    padding-bottom: 20px;
+    cursor: pointer;
+  }
+  #logo_reservia {
+    position: absolute;
+    padding: 0 0 0px 30px;
+  }
+  nav a:hover {
+    border: none;
   }
 }
 
@@ -865,6 +827,21 @@ footer li {
 
 /* FILTRES RESPONSIVE */
 
+@media screen and (max-width: 1221px) {
+  .div_h3_et_filtres {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: -10px;
+  }
+
+  .div_filtre_filtres {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 375px;
+    row-gap: 12px;
+  }
+}
+
 @media screen and (max-width: 415px) {
   .div_h3_et_filtres {
     display: flex;
@@ -873,10 +850,6 @@ footer li {
   .div_filtre_filtres {
     display: flex;
     justify-content: flex-start;
-  }
-
-  ..filtre_div_flex2 {
-    display: flex;
   }
 
   .margfiltre {
@@ -927,74 +900,96 @@ footer li {
   }
 }
 
-/* HEADER REPONSIVE */
+/* HEBERGEMENTS / LES PLUS POPULAIRE / RESPONSIVE */
 
-@media screen and (max-width: 650px) {
-  header {
-    display: flex;
-    align-items: flex-start;
-    height: 150px;
-    padding-top: 35px;
-    padding-left: 0px;
-    min-width: 375px;
+@media screen and (max-width: 1221px) {
+  .galery_carte_marseille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .navcontent {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
+  .hebergement_marseille_container {
+    background-color: #f2f2f2;
+    height: auto;
     width: 100%;
   }
 
-  nav ul {
-    padding-left: 0px;
-  }
-
-  nav {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  nav li {
-    text-align: center;
-    border-bottom: solid 3px #f2f2f2;
-    padding-bottom: 20px;
-    width: 100%;
-  }
-  .nav_bottom:hover {
-    border-bottom: solid 3px #0065fc;
-    padding-bottom: 20px;
-    cursor: pointer;
-  }
-  #logo_reservia {
-    position: absolute;
-    padding: 0 0 0px 30px;
-  }
-  nav a:hover {
-    border: none;
+  .les_plus_populaires_contenair {
+    width: 359px;
+    height: 893px;
   }
 }
 
-/* FOOTER RESPONSIVE */
-
-@media screen and (max-width: 600px) {
-  footer a {
-    color: black;
+@media screen and (max-width: 1010px) {
+  .hebergements {
+    flex-direction: column-reverse;
   }
 
-  .container_colonnes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .les_plus_populaires_contenair {
+    width: auto;
+    height: auto;
+    margin: 0px;
+  }
+
+  .hebergement_marseille_container {
+    margin-top: 50px;
+    height: 860px;
     width: 100%;
-    max-width: 100%;
-    padding: 0 30px 20px 30px;
-    margin: auto;
-    box-sizing: border-box;
+    min-width: 375px;
+    background-color: white;
   }
 
-  .colonnes_footer {
-    flex-direction: column;
+  .galery_carte_marseille {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .hebergements {
+    flex-direction: column-reverse;
+  }
+
+  .les_plus_populaires_contenair {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    margin-left: -30px;
+  }
+
+  .hebergement_marseille_container {
+    margin-top: 50px;
+    height: auto;
+    width: auto;
+    border-radius: 0px;
+    margin-left: -41px;
+    width: 116%;
+  }
+
+  .galery_carte_marseille {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 493px) {
+  .les_plus_populaires_contenair {
+    margin-left: -30px;
+    width: 100%;
+  }
+  .hebergement_marseille_container {
+    margin-left: -39px;
+    width: 120%;
+  }
+
+  .galery_carte_marseille {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .galery_carte_marseille {
+    width: 104%;
   }
 }
 
@@ -1020,12 +1015,14 @@ footer li {
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 730px) {
   .activites {
     height: 1500px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
   .activites h2 {
-    margin-left: 30px;
+    margin-left: 11%;
     margin-bottom: 33px;
   }
   .activites_container {
@@ -1037,19 +1034,21 @@ footer li {
   }
   .vieux_port_container {
     height: 203px;
-    width: 90%;
+    width: 86%;
+    margin-left: 25px;
   }
   .vieux_port_img {
     height: 143px;
   }
   .parc_national_des_calanques_container {
     height: 203px;
-    width: 90%;
+    width: 86%;
+    margin-left: 25px;
   }
   .parc_national_des_calanques_img {
     height: 143px;
   }
-  .container_colonne_2 {
+  .container_fp_et_idf {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1057,7 +1056,8 @@ footer li {
   }
   .fort_de_pomegues_container {
     height: 203px;
-    width: 90%;
+    width: 86%;
+    margin-left: 25px;
     margin-bottom: 24px;
   }
   .fort_de_pomegues_img {
@@ -1065,20 +1065,23 @@ footer li {
   }
   .iles_du_frioul_container {
     height: 203px;
-    width: 90%;
+    width: 86%;
+    margin-left: 25px;
   }
   .iles_du_frioul_img {
     height: 143px;
   }
-  .container_colonne_4 {
+  .container_nd_pl {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 86%;
+    margin-left: 25px;
   }
   .notre_dame_de_la_garde_container {
     height: 203px;
-    width: 90%;
+    width: 100%;
+    margin-left: 0px;
     margin-bottom: 24px;
   }
   .notre_dame_de_la_garde_img {
@@ -1086,9 +1089,37 @@ footer li {
   }
   .parc_longchamp_container {
     height: 203px;
-    width: 90%;
+    width: 100%;
+    margin-left: 0px;
   }
   .parc_longchamp_img {
     height: 143px;
+  }
+}
+
+/* FOOTER RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+  footer a {
+    color: black;
+  }
+
+  .container_colonnes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 35px 20px 30px;
+    box-sizing: border-box;
+    margin-left: -17px;
+  }
+
+  .colonnes_footer {
+    flex-direction: column;
+  }
+
+  .footer {
+    margin-top: -25px;
   }
 }
