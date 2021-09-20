@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -671,6 +673,18 @@ figcaption {
   margin: 15px 0 16px 18px;
 }
 
+.txt_vp {
+  padding-top: 10px;
+}
+
+.txt_idf {
+  padding-top: 10px;
+}
+
+.txt_line_height {
+  padding-top: 7px;
+}
+
 /* FOOTER */
 
 .footer {
@@ -842,6 +856,57 @@ footer li {
   }
 }
 
+@media screen and (max-width: 1010px) {
+  .logo_info {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1.5px #d9d9d9;
+    border-radius: 50px;
+    margin-right: 10px;
+
+    position: relative;
+    bottom: 1px;
+  }
+
+  .i_info {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  .logo_info {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 0.7em;
+    bottom: 9px;
+  }
+
+  .i_info {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo_info {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 0.7em;
+    bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .logo_info {
+    width: 32px;
+    height: 25px;
+  }
+}
+
 @media screen and (max-width: 415px) {
   .div_h3_et_filtres {
     display: flex;
@@ -942,6 +1007,14 @@ footer li {
   .galery_carte_marseille {
     width: 100%;
   }
+
+  .marg_titre_galery_afPlus {
+    margin-top: -50px;
+  }
+
+  .activites {
+    margin-top: -50px;
+  }
 }
 
 @media screen and (max-width: 585px) {
@@ -954,6 +1027,7 @@ footer li {
     height: auto;
     border-radius: 0px;
     margin-left: -30px;
+    font-size: 0.9em;
   }
 
   .hebergement_marseille_container {
@@ -969,17 +1043,18 @@ footer li {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
+    font-size: 0.9em;
   }
 }
 
 @media screen and (max-width: 493px) {
   .les_plus_populaires_contenair {
     margin-left: -30px;
-    width: 100%;
+    width: 101.6%;
   }
   .hebergement_marseille_container {
     margin-left: -39px;
-    width: 120%;
+    width: 121%;
   }
 
   .galery_carte_marseille {
@@ -1034,16 +1109,16 @@ footer li {
   }
   .vieux_port_container {
     height: 203px;
-    width: 86%;
-    margin-left: 25px;
+    width: 87%;
+    margin-left: 29px;
   }
   .vieux_port_img {
     height: 143px;
   }
   .parc_national_des_calanques_container {
     height: 203px;
-    width: 86%;
-    margin-left: 25px;
+    width: 87%;
+    margin-left: 29px;
   }
   .parc_national_des_calanques_img {
     height: 143px;
@@ -1056,8 +1131,8 @@ footer li {
   }
   .fort_de_pomegues_container {
     height: 203px;
-    width: 86%;
-    margin-left: 25px;
+    width: 87%;
+    margin-left: 29px;
     margin-bottom: 24px;
   }
   .fort_de_pomegues_img {
@@ -1065,8 +1140,8 @@ footer li {
   }
   .iles_du_frioul_container {
     height: 203px;
-    width: 86%;
-    margin-left: 25px;
+    width: 87%;
+    margin-left: 29px;
   }
   .iles_du_frioul_img {
     height: 143px;
@@ -1075,8 +1150,8 @@ footer li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 86%;
-    margin-left: 25px;
+    width: 87%;
+    margin-left: 29px;
   }
   .notre_dame_de_la_garde_container {
     height: 203px;
