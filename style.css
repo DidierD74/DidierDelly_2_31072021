@@ -38,10 +38,18 @@ nav a {
   padding: 30px 40px;
 }
 
-nav a:hover {
+nav li:hover {
   color: #0065fc;
   border-top: solid 2px;
   padding-top: 49px;
+  margin-top: -51px;
+}
+
+.top_hebergement_desktop {
+  color: #0065fc;
+  border-top: solid 2px;
+  padding-top: 49px;
+  margin-top: -51px;
 }
 
 .survol {
@@ -785,6 +793,15 @@ footer li {
     padding-bottom: 20px;
     width: 100%;
   }
+
+  nav li:hover {
+    color: transparent;
+  }
+
+  .top_hebergement_desktop {
+    color: transparent;
+  }
+
   .nav_bottom:hover {
     border-bottom: solid 3px #0065fc;
     padding-bottom: 20px;
@@ -796,6 +813,11 @@ footer li {
   }
   nav a:hover {
     border: none;
+  }
+
+  .bottom_hebergement_resp {
+    border-bottom: solid 3px #0065fc;
+    padding-bottom: 20px;
   }
 }
 
