@@ -1088,6 +1088,9 @@ footer li {
   .galery_carte_marseille {
     width: 104%;
   }
+  .titre_hebergements_h2 {
+    font-size: 21px;
+  }
 }
 
 /* ACTIVITÉ RESPONSIVE */
