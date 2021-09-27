@@ -45,11 +45,8 @@ nav li:hover {
   margin-top: -51px;
 }
 
-.top_hebergement_desktop {
+nav a:hover {
   color: #0065fc;
-  border-top: solid 2px;
-  padding-top: 49px;
-  margin-top: -51px;
 }
 
 .survol {
@@ -815,7 +812,7 @@ footer li {
     border: none;
   }
 
-  .bottom_hebergement_resp {
+  .bottom_hebergement_resp:hover {
     border-bottom: solid 3px #0065fc;
     padding-bottom: 20px;
   }
